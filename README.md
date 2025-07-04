@@ -1,20 +1,40 @@
 
 # 📰 LLM News Classifier with Web Scraping & Fine-Tuning
 
-## 🚀 Introduction
+---
 
-This project walks you through the **end-to-end pipeline** of collecting real-world data by scraping websites and using it to **fine-tune a Large Language Model (LLM)** for **news article classification**. It combines **Decodo** for scraping, **BeautifulSoup** for parsing HTML, and **Hugging Face Transformers** for training and inference.
+## 🎥 Demo Video
 
-### 🎯 What You'll Learn
+https://github.com/mgulati3/Fine-Tune/assets/record.gif
 
-- 🌐 How to crawl and scrape structured data from websites using Decodo
-- 🔧 Understanding HTML/CSS structure for scraping and navigating the DOM
-- 🧠 Basics of LLMs and the fine-tuning process
-- 🧹 How to clean and prepare datasets for training
-- 📊 How to train/fine-tune a text classifier using Hugging Face
-- 🛠️ Switching from a text generation model to a classification model
-- 🧪 Evaluating LLMs for accuracy and performance
-- 🔁 Using the fine-tuned model for real-time inference
+---
+
+## 👋 Introduction
+
+This is a complete project I built from scratch that showcases how to collect real-world data by **scraping news articles**, clean and format it, and use it to **fine-tune a Large Language Model (LLM)** for text classification.
+
+I scraped articles directly from **[NPR](https://www.npr.org/)** using Decodo’s smart web scraping tools (with built-in proxy handling and JS rendering). Then, I used **BeautifulSoup** to extract the article links and text from the HTML.
+
+After cleaning and preparing the dataset, I fine-tuned a model on five news categories — `politics`, `business`, `health`, `science`, and `climate`.
+
+🧠 The final model is hosted on Hugging Face:
+🔗 [mgulati3/news-classifier-model](https://huggingface.co/mgulati3/news-classifier-model)
+
+You can use the model locally with a Gradio UI to classify custom news inputs. It’s a great starter project for anyone looking to master data scraping, LLM fine-tuning, and inference deployment.
+
+---
+
+## 👋 Introduction
+
+Hi! I’m Manan Gulati, and this is a hands-on project I built to explore the **end-to-end pipeline** of training a Large Language Model (LLM) using real-world data collected via **web scraping**.
+
+I developed a custom text classification model for news articles by:
+- Crawling and scraping real news websites using **Decodo**
+- Parsing and processing content with **BeautifulSoup**
+- Fine-tuning a transformer-based model with **Hugging Face Transformers**
+
+You can check out the final model here on the Hugging Face Hub:  
+👉 [mgulati3/news-classifier-model](https://huggingface.co/mgulati3/news-classifier-model)
 
 ---
 
@@ -22,7 +42,7 @@ This project walks you through the **end-to-end pipeline** of collecting real-wo
 
 1. Web scraping with **Decodo** (built-in proxy rotation & JavaScript rendering)
 2. Crawl HTML pages, extract content with **BeautifulSoup**
-3. Scraped **100 sites each** from: `politics`, `business`, `health`, `science`, `climate` — total **500 articles**
+3. Scraped **1000 sites each** from: `politics`, `business`, `health`, `science`, `climate` — total **5000 articles**
 4. Cleaned, labeled, and tokenized the data using Hugging Face tools
 5. Converted the data to HF datasets, added padding tokens for LLaMA
 6. Fine-tuned the model for classification
@@ -65,28 +85,6 @@ python3 main.py
 ## 🧪 Inference Demo (Gradio UI)
 
 A simple Gradio front-end will open at [http://127.0.0.1:7860](http://127.0.0.1:7860). You can paste any news article or headline and get its predicted category.
-
----
-
-## 🎥 Demo Video
-
-
-https://github.com/mgulati3/Fine-Tune/assets/record.mov
-
-(Embed this `.mov` file inside an `/assets` folder in your repo.)
-
----
-
-## 📁 Project Structure
-
-```
-├── main.py                # Gradio app using HF pipeline
-├── news_classifier_model/ # Saved tokenizer & model
-├── assets/
-│   └── record.mov         # Demo video
-├── README.md
-├── requirements.txt
-```
 
 ---
 
