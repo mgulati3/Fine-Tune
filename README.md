@@ -88,19 +88,6 @@ https://github.com/YOUR_USERNAME/YOUR_REPO/assets/record.mov
 
 ---
 
-## 📁 Project Structure
-
-```
-├── main.py                # Gradio app using HF pipeline
-├── news_classifier_model/ # Saved tokenizer & model
-├── assets/
-│   └── record.mov         # Demo video
-├── README.md
-├── requirements.txt
-```
-
----
-
 ## 🤝 Credits
 
 - Built with ❤️ using Hugging Face Transformers, Gradio, Decodo, and BeautifulSoup
