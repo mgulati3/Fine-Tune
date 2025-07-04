@@ -5,7 +5,7 @@
 
 ## 🎥 Demo Video
 
-https://github.com/mgulati3/Fine-Tune/assets/record.gif
+![Demo](assets/record.gif)
 
 ---
 
