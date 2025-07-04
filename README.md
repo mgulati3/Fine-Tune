@@ -1,6 +1,14 @@
 
 # 📰 LLM News Classifier with Web Scraping & Fine-Tuning
 
+---
+
+## 🎥 Demo Video
+
+https://github.com/mgulati3/Fine-Tune/assets/record.gif
+
+---
+
 ## 👋 Introduction
 
 This is a complete project I built from scratch that showcases how to collect real-world data by **scraping news articles**, clean and format it, and use it to **fine-tune a Large Language Model (LLM)** for text classification.
@@ -77,14 +85,6 @@ python3 main.py
 ## 🧪 Inference Demo (Gradio UI)
 
 A simple Gradio front-end will open at [http://127.0.0.1:7860](http://127.0.0.1:7860). You can paste any news article or headline and get its predicted category.
-
----
-
-## 🎥 Demo Video
-
-https://github.com/YOUR_USERNAME/YOUR_REPO/assets/record.mov
-
-(Embed this `.mov` file inside an `/assets` folder in your repo.)
 
 ---
 
