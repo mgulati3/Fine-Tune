@@ -20,8 +20,6 @@ After cleaning and preparing the dataset, I fine-tuned a model on five news cate
 🧠 The final model is hosted on Hugging Face:
 🔗 [mgulati3/news-classifier-model](https://huggingface.co/mgulati3/news-classifier-model)
 
-You can use the model locally with a Gradio UI to classify custom news inputs. It’s a great starter project for anyone looking to master data scraping, LLM fine-tuning, and inference deployment.
-
 ---
 
 ## 👋 Introduction
