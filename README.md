@@ -82,7 +82,7 @@ python3 main.py
 
 ## 🧪 Inference Demo (Gradio UI)
 
-A simple Gradio front-end will open at [http://127.0.0.1:7860](http://127.0.0.1:7860). You can paste any news article or headline and get its predicted category.
+A simple Gradio front-end will open at [http://0.0.0.0:7860](http://0.0.0.0:7860). You can paste any news article or headline and get its predicted category.
 
 ---
 
