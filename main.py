@@ -3,6 +3,7 @@ from transformers import pipeline
 import json
 import time
 import traceback
+import os
 
 # Global variable to store classifier
 classifier = None
@@ -553,10 +554,11 @@ if __name__ == "__main__":
         test_model()
     
     print("Starting Gradio interface...")
+    port = int(os.environ.get("PORT", 7860))
     demo.launch(
         server_name="0.0.0.0",
-        server_port=7860,
-        share=True,
-        debug=True,  # Enable debug to see errors
-        quiet=False  # Show console output for debugging
+        server_port=port,
+        share=False,
+        debug=True,
+        quiet=False
     )
